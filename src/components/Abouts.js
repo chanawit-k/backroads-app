@@ -1,5 +1,5 @@
 import React from 'react'
-
+import imgAbout from '../images/about.jpeg'
 const Abouts = () => {
   return (
     <section class="section" id="about">
@@ -11,11 +11,7 @@ const Abouts = () => {
 
       <div class="section-center about-center">
         <div class="about-img">
-          <img
-            src="./images/about.jpeg"
-            class="about-photo"
-            alt="awesome beach"
-          />
+          <img src={imgAbout} class="about-photo" alt="awesome beach" />
         </div>
         <article class="about-info">
           <h3>explore the difference</h3>
