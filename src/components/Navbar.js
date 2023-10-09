@@ -1,5 +1,6 @@
 import React from 'react'
 import img from '../images/logo.svg'
+import { PageLink } from '../data'
 const Navbar = () => {
   return (
     <nav class="navbar">
@@ -12,33 +13,15 @@ const Navbar = () => {
         </div>
         {/* <!-- left this comment on purpose --> */}
         <ul class="nav-links" id="nav-links">
-          <li>
-            <a href="#home" class="nav-link">
-              {' '}
-              home{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href="#about" class="nav-link">
-              {' '}
-              about{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href="#services" class="nav-link">
-              {' '}
-              services{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href="#tours" class="nav-link">
-              {' '}
-              tours
-            </a>
-          </li>
+          {PageLink.map((link) => {
+            return (
+              <li key={link.id}>
+                <a href={link.href} class="nav-link">
+                  {link.text}
+                </a>
+              </li>
+            )
+          })}
         </ul>
 
         <ul class="nav-icons">
