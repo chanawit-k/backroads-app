@@ -1,21 +1,11 @@
 import React from 'react'
-import { pageLink, socialLink } from '../data'
+import { socialLink } from '../data'
+import PageLink from './PageLink'
 const Footer = () => {
   return (
-    <footer class="section footer">
-      <ul class="footer-links">
-        {pageLink.map((link) => {
-          const { id, href, text } = link
-          return (
-            <li key={id}>
-              <a href={href} class="footer-link">
-                {text}
-              </a>
-            </li>
-          )
-        })}
-      </ul>
-      <ul class="footer-icons">
+    <footer className="section footer">
+      <PageLink parentClass="footer-links" itemClass="footer-link" />
+      <ul className="footer-icons">
         {socialLink.map((link) => {
           const { id, href, icon } = link
           return (
@@ -32,7 +22,7 @@ const Footer = () => {
           )
         })}
       </ul>
-      <p class="copyright">
+      <p className="copyright">
         copyright &copy; Backroads travel tours company
         <span id="date"></span> all rights reserved
       </p>
