@@ -1,13 +1,9 @@
 import React from 'react'
-
+import Title from './Title'
 const Service = () => {
   return (
     <section class="section services" id="services">
-      <div class="section-title">
-        <h2>
-          our <span>services</span>
-        </h2>
-      </div>
+      <Title title="our" subTitle="services" />
       <div class="section-center services-center">
         <article class="service">
           <span class="service-icon">
