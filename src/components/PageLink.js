@@ -1,19 +1,13 @@
 import React from 'react'
-import { pageLink } from '../data'
-const PageLink = ({ parentClass, itemClass }) => {
+
+const PageLink = ({ href, text, itemClass }) => {
+  console.log(text)
   return (
-    <ul className={parentClass}>
-      {pageLink.map((link) => {
-        return (
-          <li key={link.id}>
-            <a href={link.href} className={itemClass}>
-              {link.text}
-            </a>
-          </li>
-        )
-      })}
-    </ul>
+    <li>
+      <a href={href} className={itemClass}>
+        {text}
+      </a>
+    </li>
   )
 }
-
 export default PageLink

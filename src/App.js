@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Abouts from './components/Abouts'
-import Service from './components/Service'
+import Services from './components/Services'
 import Tours from './components/Tours'
 import Footer from './components/Footer'
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Home />
       <Abouts />
-      <Service />
+      <Services />
       <Tours />
       <Footer />
     </>
