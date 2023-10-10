@@ -1,5 +1,4 @@
 import { pageLink } from '../data'
-import PageLink from './Pagelink'
 
 const PageLinks = ({ parentClass, itemClass }) => {
   return (
