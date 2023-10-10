@@ -1,5 +1,3 @@
-import React from 'react'
-
 const PageLink = ({ href, text, itemClass }) => {
   return (
     <li>

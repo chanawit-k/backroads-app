@@ -1,4 +1,3 @@
-import React from 'react'
 import { pageLink } from '../data'
 import PageLink from './Pagelink'
 
