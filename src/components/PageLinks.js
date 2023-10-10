@@ -3,7 +3,7 @@ import PageLink from './Pagelink'
 
 const PageLinks = ({ parentClass, itemClass }) => {
   return (
-    <ul className={parentClass}>
+    <ul className={parentClass} id="nav-links">
       {pageLink.map((link) => {
         return <PageLink key={link.id} {...link} itemClass={itemClass} />
       })}
