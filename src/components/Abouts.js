@@ -21,7 +21,7 @@ const Abouts = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#about" class="btn">
+          <a href="#" class="btn">
             read more
           </a>
         </article>
